@@ -1,8 +1,11 @@
 import nextCookie from 'next-cookies'
 import cookie from 'js-cookie'
 
-const acceptLanguages = ['ru', 'en']
-const defaultLocale = acceptLanguages[0]
+const defaultLocale = process.env.DEFAULT_LANGUAGE
+
+const acceptLanguages = process.env.ACCEPT_LANGUAGES
+  ? process.env.ACCEPT_LANGUAGES.split(',')
+  : ['en']
 
 export const getLocale = async (ctx) => {
   try {

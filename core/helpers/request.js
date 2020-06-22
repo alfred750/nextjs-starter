@@ -1,10 +1,7 @@
 import axios from 'axios';
 
-// TODO перенести в config
-const connectTimeout = 20000
-const apiBaseUrl = 'http://localhost:4000/api'
-const serverErrorMessage = ''
-const connectErrorMessage = ''
+const connectTimeout = process.env.API_CONNECT_TIMEOUT || 10000
+const apiBaseUrl = process.env.API_BASE_URL || 'http://localhost:4000/api'
 
 axios.defaults.timeout = connectTimeout;
 
@@ -31,14 +28,11 @@ export const request = ({
     if (axiosError.response) {
       error.data = axiosError.response.data || null;
       error.status = axiosError.response.status;
-      if (error.status >= 500) {
-        error.message = serverErrorMessage;
-      } else {
+      if (error.status < 500) {
         error.message = axiosError.response.data.message;
       }
     } else {
       error.status = 600;
-      error.message = connectErrorMessage;
     }
     return error;
   };
