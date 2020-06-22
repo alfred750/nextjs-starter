@@ -1,0 +1,17 @@
+.list {
+
+  &__item {
+    position: relative;
+  }
+
+  &_inline {
+    .list__item {
+      display: inline-block;
+
+      + .list__item {
+        margin-left: 30px;
+      }
+    }
+  }
+
+}

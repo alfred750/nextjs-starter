@@ -1,0 +1,16 @@
+@import '../../../theme/styles/global/settings';
+
+.my {
+  &-layout {
+    background-color: $white;
+  }
+  &-header {
+    background-color: $gray;
+  }
+  &-main {
+    padding: 20px 50px;
+  }
+  &-footer {
+    background-color: $gray;
+  }
+}

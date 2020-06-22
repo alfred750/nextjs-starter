@@ -1,0 +1,7 @@
+{
+  "error.default": "An error occurred. Please contact technical support.",
+  "error.connect": "Connection error. Please try again later or contact technical support.",
+  "menu.home": "Home",
+  "menu.contacts": "Contacts",
+  "menu.about": "About"
+}
