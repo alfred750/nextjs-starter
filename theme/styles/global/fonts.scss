@@ -1,0 +1,57 @@
+//-- Fonts
+//------------------------------------------------------
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('../fonts/Gilroy/Gilroy-Regular.eot');
+  src: local('Gilroy Regular'), local('Gilroy-Regular'),
+  url('../fonts/Gilroy/Gilroy-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Gilroy/Gilroy-Regular.woff') format('woff'),
+  url('../fonts/Gilroy/Gilroy-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy Bold';
+  src: url('../fonts/GilroyBold/Gilroy-Bold.eot');
+  src: local('Gilroy Bold'), local('Gilroy-Bold'),
+  url('../fonts/GilroyBold/Gilroy-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/GilroyBold/Gilroy-Bold.woff') format('woff'),
+  url('../fonts/GilroyBold/Gilroy-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy SemiBold';
+  src: url('../fonts/GilroySemiBold/Gilroy-SemiBold.eot');
+  src: local('Gilroy SemiBold'), local('Gilroy-SemiBold'),
+  url('../fonts/GilroySemiBold/Gilroy-SemiBold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/GilroySemiBold/Gilroy-SemiBold.woff') format('woff'),
+  url('../fonts/GilroySemiBold/Gilroy-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy Medium';
+  src: url('../fonts/Gilroy Medium/Gilroy-Medium.eot');
+  src: local('Gilroy Medium'), local('Gilroy-Medium'),
+  url('../fonts/Gilroy Medium/Gilroy-Medium.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Gilroy Medium/Gilroy-Medium.woff') format('woff'),
+  url('../fonts/Gilroy Medium/Gilroy-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icons/icomoon.eot?l1h16g');
+  src:  url('../fonts/icons/icomoon.eot?l1h16g#iefix') format('embedded-opentype'),
+  url('../fonts/icons/icomoon.ttf?l1h16g') format('truetype'),
+  url('../fonts/icons/icomoon.woff?l1h16g') format('woff'),
+  url('../fonts/icons/icomoon.svg?l1h16g#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
