@@ -2,7 +2,7 @@ import React from 'react'
 import { Provider } from 'react-redux'
 import App from 'next/app'
 import { withNextIntlSetup } from '@moxy/next-intl';
-import nextIntlConfig from '../intl';
+import nextIntlConfig from '../core/configs/intlConfig';
 import store from '../core/store'
 import {getSelf} from '../core/actions/session'
 

@@ -6,7 +6,7 @@ export default {
       id: 'en',
       name: 'English',
       loadMessages: async () => {
-        const module = await import('./messages/en.json');
+        const module = await import('../../theme/locales/en.json');
         return module.default;
       },
     },
@@ -14,7 +14,7 @@ export default {
       id: 'ru',
       name: 'Russian',
       loadMessages: async () => {
-        const module = await import('./messages/ru.json');
+        const module = await import('../../theme/locales/ru.json');
         return module.default;
       },
     },
