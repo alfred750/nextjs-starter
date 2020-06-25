@@ -1,6 +1,6 @@
-import React from 'react'
-import Head from 'next/head'
-import MyLayout from '../../components/My/Layout'
+import React from 'react';
+import Head from 'next/head';
+import MyLayout from '../../components/My/Layout';
 
 export default function Admin() {
   return (
@@ -12,5 +12,5 @@ export default function Admin() {
         My
       </div>
     </MyLayout>
-  )
+  );
 }
