@@ -1,7 +1,7 @@
 import axios from 'axios';
 
-const connectTimeout = process.env.API_CONNECT_TIMEOUT || 10000
-const apiBaseUrl = process.env.API_BASE_URL || 'http://localhost:4000/api'
+const connectTimeout = process.env.API_CONNECT_TIMEOUT || 10000;
+const apiBaseUrl = process.env.API_BASE_URL || 'http://localhost:4000/api';
 
 axios.defaults.timeout = connectTimeout;
 
@@ -10,9 +10,11 @@ export const request = ({
   url = '',
   data = null,
   contentType = 'application/json',
-  baseURL = apiBaseUrl
+  baseURL = apiBaseUrl,
 }) => {
-  const options = { method, baseURL, url, headers: { 'content-type': contentType } };
+  const options = {
+    method, baseURL, url, headers: { 'content-type': contentType },
+  };
 
   const token = localStorage.getItem('token');
   if (token) options.headers.Authorization = `Bearer ${token}`;

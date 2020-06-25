@@ -1,1 +1,1 @@
-export * from './useIntl'
+export * from './useIntl';

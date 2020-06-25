@@ -1,6 +1,6 @@
-import React from 'react'
-import Head from 'next/head'
-import SiteLayout from '../components/Site/Layout'
+import React from 'react';
+import Head from 'next/head';
+import SiteLayout from '../components/Site/Layout';
 
 export default function About() {
   return (
@@ -12,5 +12,5 @@ export default function About() {
         About
       </div>
     </SiteLayout>
-  )
+  );
 }

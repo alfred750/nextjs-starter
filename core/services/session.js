@@ -7,7 +7,7 @@ import { request } from '../helpers';
  * @param {string} data.password
  * @returns {Promise<any>}
  */
-const signUp = data => request({ url: '/authentication/signUp', data });
+const signUp = (data) => request({ url: '/authentication/signUp', data });
 
 /**
  * SignIn
@@ -16,7 +16,7 @@ const signUp = data => request({ url: '/authentication/signUp', data });
  * @param {string} data.password
  * @returns {Promise<any>}
  */
-const signIn = data => request({ url: '/authentication/signIn', data });
+const signIn = (data) => request({ url: '/authentication/signIn', data });
 
 /**
  * Get Self
@@ -28,6 +28,6 @@ const SessionServices = {
   signUp,
   signIn,
   getSelf,
-}
+};
 
-export default SessionServices
+export default SessionServices;

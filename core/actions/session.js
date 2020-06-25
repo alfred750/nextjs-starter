@@ -1,6 +1,6 @@
-import Router from 'next/router'
-import { createAsyncThunk } from '@reduxjs/toolkit'
-import SessionServices from '../services/session'
+import Router from 'next/router';
+import { createAsyncThunk } from '@reduxjs/toolkit';
+import SessionServices from '../services/session';
 
 export const getSelf = createAsyncThunk(
   'session/getSelf',
@@ -11,16 +11,16 @@ export const getSelf = createAsyncThunk(
         return await SessionServices.getSelf();
       } catch (error) {
         localStorage.removeItem('token');
-        return rejectWithValue(error)
+        return rejectWithValue(error);
       }
     } else {
-      return rejectWithValue(null)
+      return rejectWithValue(null);
     }
-  }
-)
+  },
+);
 
-export const logout = () => dispatch => {
+export const logout = () => (dispatch) => {
   localStorage.removeItem('token');
-  dispatch({ type: 'session/logout'})
-  Router.push('/')
-}
+  dispatch({ type: 'session/logout' });
+  Router.push('/');
+};
