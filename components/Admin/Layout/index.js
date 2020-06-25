@@ -4,24 +4,25 @@ import LanguageButton from '../../Common/LanguageButton'
 import Logo from '../../Common/Logo'
 import AdminMenu from '../Menu'
 import LogoutButton from '../../Common/LogoutButton'
+import RoleLayout from '../../Common/RoleLayout'
 import './styles.scss'
 
 const { Header, Footer, Content } = Layout;
 
-const AdminLayout = ({ children }) => {
-  return (
+const AdminLayout = ({ children }) => (
+  <RoleLayout role="admin">
     <Layout className="admin-layout">
       <Header className="admin-header">
         <Row justify="space-betw">
           <Col span={4}>
-            <Logo />
+            <Logo/>
           </Col>
           <Col span={14}>
-            <AdminMenu />
+            <AdminMenu/>
           </Col>
           <Col span={6}>
-            <LanguageButton />
-            <LogoutButton />
+            <LanguageButton/>
+            <LogoutButton/>
           </Col>
         </Row>
       </Header>
@@ -30,7 +31,7 @@ const AdminLayout = ({ children }) => {
       </Content>
       <Footer className="admin-footer">Footer</Footer>
     </Layout>
-  )
-};
+  </RoleLayout>
+);
 
 export default AdminLayout

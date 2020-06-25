@@ -3,5 +3,6 @@
   "error.connect": "Connection error. Please try again later or contact technical support.",
   "menu.home": "Home",
   "menu.contacts": "Contacts",
-  "menu.about": "About"
+  "menu.about": "About",
+  "menu.admin": "Admin"
 }

@@ -3,10 +3,10 @@ import {Button} from 'antd'
 import { useIntl } from '../../../core/hooks'
 
 const LanguageButton = () => {
-  const { locale, setLocale } = useIntl()
+  const { locale, changeLocale } = useIntl()
   const handleChangeLocale = () => {
     const newLocale = locale === 'en' ? 'ru' : 'en'
-    setLocale(newLocale)
+    changeLocale(newLocale)
   }
   return (
     <Button onClick={handleChangeLocale}>{locale}</Button>

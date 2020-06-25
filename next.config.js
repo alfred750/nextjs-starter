@@ -2,6 +2,7 @@ const withPlugins = require('next-compose-plugins');
 const nextCss = require('@zeit/next-css')
 const nextSass = require('@zeit/next-sass')
 const nextPWA = require('next-pwa')
+const nextIntl = require('@moxy/next-intl/plugin');
 
 const nextConfig = {
   webpack: (config) => {
@@ -27,5 +28,5 @@ module.exports = withPlugins([
       disable: process.env.NODE_ENV === 'development',
     }
   }],
-], nextConfig)
+], nextIntl()({ ...nextConfig}))
 

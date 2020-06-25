@@ -7,6 +7,7 @@ const menuItems = [
   { to: '/', title: 'menu.home' },
   { to: '/contacts', title: 'menu.contacts' },
   { to: '/about', title: 'menu.about' },
+  { to: '/admin', title: 'menu.admin' },
 ]
 
 const SiteMenu = ({ className = '' }) => {

@@ -1,15 +1,14 @@
 import React from 'react'
-import { useIntl as useIntlOrigin } from 'react-intl'
-import {LocaleContext} from '../../components/Common/IntlProvider'
-
-const useLocale = () => React.useContext(LocaleContext)
+import { useNextIntl } from '@moxy/next-intl';
 
 export const useIntl = () => {
-  const intl = useIntlOrigin()
-  const { setLocale } = useLocale()
+  const { changeLocale, intl } = useNextIntl();
+
   const t = (id) => {
     return intl.formatMessage({ id, defaultMessage: '' });
   };
-  const locale = intl.locale
-  return { locale, setLocale, intl, t }
+
+  const locale = intl.locale;
+
+  return { locale, changeLocale, intl, t }
 }
