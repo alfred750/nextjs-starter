@@ -24,9 +24,7 @@ const MyLayout = ({ children }) => (
         </Col>
       </Row>
     </Header>
-    <Content className="my-main">
-      {children}
-    </Content>
+    <Content className="my-main">{children}</Content>
     <Footer className="my-footer">Footer</Footer>
   </Layout>
 );

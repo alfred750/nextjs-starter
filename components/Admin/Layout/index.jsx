@@ -24,9 +24,7 @@ const AdminLayout = ({ children }) => (
         </Col>
       </Row>
     </Header>
-    <Content className="admin-main">
-      {children}
-    </Content>
+    <Content className="admin-main">{children}</Content>
     <Footer className="admin-footer">Footer</Footer>
   </Layout>
 );

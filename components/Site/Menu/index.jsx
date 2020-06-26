@@ -17,7 +17,11 @@ const SiteMenu = ({ className = '' }) => {
     <ul className={classes}>
       {menuItems.map((item) => (
         <li key={item.to} className="list__item">
-          <Link href={item.to}><a className="list__link" href={item.to}>{t(item.title)}</a></Link>
+          <Link href={item.to}>
+            <a className="list__link" href={item.to}>
+              {t(item.title)}
+            </a>
+          </Link>
         </li>
       ))}
     </ul>

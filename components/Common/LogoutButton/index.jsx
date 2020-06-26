@@ -8,9 +8,7 @@ const LogoutButton = () => {
   const handleClick = () => {
     dispatch(logout());
   };
-  return (
-    <Button onClick={handleClick}>logout</Button>
-  );
+  return <Button onClick={handleClick}>logout</Button>;
 };
 
 export default LogoutButton;

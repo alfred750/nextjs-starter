@@ -22,9 +22,7 @@ const SiteLayout = ({ children }) => (
         </Col>
       </Row>
     </Header>
-    <Content className="site-main">
-      {children}
-    </Content>
+    <Content className="site-main">{children}</Content>
     <Footer className="site-footer">Footer</Footer>
   </Layout>
 );
