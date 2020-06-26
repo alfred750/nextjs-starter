@@ -8,9 +8,7 @@ const LanguageButton = () => {
     const newLocale = locale === 'en' ? 'ru' : 'en';
     changeLocale(newLocale);
   };
-  return (
-    <Button onClick={handleChangeLocale}>{locale}</Button>
-  );
+  return <Button onClick={handleChangeLocale}>{locale}</Button>;
 };
 
 export default LanguageButton;
