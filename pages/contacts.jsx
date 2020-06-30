@@ -8,9 +8,7 @@ export default function Contacts() {
       <Head>
         <title>Contacts</title>
       </Head>
-      <div>
-        Contacts
-      </div>
+      <div>Contacts</div>
     </SiteLayout>
   );
 }
