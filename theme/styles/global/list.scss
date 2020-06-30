@@ -1,7 +1,7 @@
 .list {
-
   &__item {
     position: relative;
+    @extend %text-center;
   }
 
   &_inline {
@@ -13,5 +13,4 @@
       }
     }
   }
-
 }
