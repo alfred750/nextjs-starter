@@ -1,0 +1,12 @@
+//-- Mixin for Flexbox
+//------------------------------------------------------
+
+@mixin flex-component-width($width, $space-between: null) {
+  @if ($space-between != null) {
+    flex: 0 0 flex-width($width, $space-between);
+    max-width: flex-width($width, $space-between);
+  } @else {
+    flex: 0 0 $width;
+    max-width: $width;
+  }
+}

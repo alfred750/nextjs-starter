@@ -1,16 +1,16 @@
-// @import '../../../theme/styles/global/settings';
+@import 'theme/styles/settings/index';
 
-// .site {
-//   &-layout {
-//     background-color: $white;
-//   }
-//   &-header {
-//     background-color: $gray;
-//   }
-//   &-main {
-//     padding: 20px 50px;
-//   }
-//   &-footer {
-//     background-color: $gray;
-//   }
-// }
+.site {
+  &-layout {
+    background-color: $white;
+  }
+  &-header {
+    background-color: $gray;
+  }
+  &-main {
+    padding: 20px 50px;
+  }
+  &-footer {
+    background-color: $gray;
+  }
+}

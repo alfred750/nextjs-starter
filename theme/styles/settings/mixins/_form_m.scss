@@ -1,0 +1,22 @@
+//-- Mixin for Forms
+//------------------------------------------------------
+
+@mixin placeholder {
+  &.placeholder,
+  &::placeholder {
+    @content;
+  }
+}
+
+@mixin opacity-input() {
+  cursor: pointer;
+  opacity: 0;
+  @include top-absolute-full-block;
+  z-index: $z-index-4;
+}
+
+@mixin input-gr-addon() {
+  vertical-align: middle;
+  width: 1%;
+  white-space: nowrap;
+}
