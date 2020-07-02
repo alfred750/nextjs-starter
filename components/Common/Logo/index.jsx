@@ -1,6 +1,10 @@
 import React from 'react';
 import './styles.scss';
 
-const Logo = () => <div className="logo">Logo</div>;
+const Logo = () => (
+  <a href="/" className="logo">
+    <img src="/images/logo.svg" alt="" />
+  </a>
+);
 
 export default Logo;

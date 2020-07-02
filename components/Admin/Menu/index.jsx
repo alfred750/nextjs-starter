@@ -11,13 +11,13 @@ const menuItems = [
 
 const AdminMenu = ({ className = '' }) => {
   const { t } = useIntl();
-  const classes = classNames('list list_inline', className);
+  const classes = classNames('list list-inline', className);
   return (
     <ul className={classes}>
       {menuItems.map((item) => (
-        <li key={item.to} className="list__item">
+        <li key={item.to} className="list-item">
           <Link href={item.to}>
-            <a className="list__link" href={item.to}>
+            <a className="list-link" href={item.to}>
               {t(item.title)}
             </a>
           </Link>

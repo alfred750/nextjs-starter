@@ -1,17 +1,19 @@
-.list {
+///-- Lists
+////------------------------------------------------------
 
-  &__item {
+.list {
+  &-item {
     position: relative;
+    @extend %text-center;
   }
 
-  &_inline {
-    .list__item {
+  &-inline {
+    .list-item {
       display: inline-block;
 
-      + .list__item {
+      + .list-item {
         margin-left: 30px;
       }
     }
   }
-
 }

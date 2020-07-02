@@ -1,3 +1,9 @@
-.logo {
+@import 'theme/styles/settings/index';
 
+.logo {
+  display: block;
+
+  > img {
+    max-width: 100px;
+  }
 }

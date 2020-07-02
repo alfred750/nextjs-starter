@@ -1,0 +1,14 @@
+///-- Fonts
+////------------------------------------------------------
+
+$font-path: '/fonts';
+
+@font-face {
+  font-family: 'Montserrat';
+  src: local('Montserrat'), local('Montserrat-Regular'),
+    url('#{$font-path}/Montserrat/montserrat.woff2') format('woff2'),
+    url('#{$font-path}/Montserrat/montserrat.woff') format('woff'),
+    url('#{$font-path}/Montserrat/montserrat.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
