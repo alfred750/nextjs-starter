@@ -8,9 +8,7 @@ export default function Home() {
       <Head>
         <title>Next.js starter</title>
       </Head>
-      <div>
-        Page content
-      </div>
+      <div>Page content</div>
     </SiteLayout>
   );
 }
